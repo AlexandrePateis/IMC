@@ -35,7 +35,7 @@ form.addEventListener('submit', function (e) {
 });
 
 function getImc(peso, altura) {
-    let imc = (peso / altura).toFixed(2)
+    let imc = (peso / (altura*altura)).toFixed(2)
     return imc
 }
 
